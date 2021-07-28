@@ -384,7 +384,7 @@ body.dm section.flex .input .input_area {
 body.dm section.flex .input .input_area .text {
   display: flex;
   width: 100%;
-  height: 32px;
+  height: auto;
   font-size: 13px;
   color: #000;
 }
@@ -393,13 +393,13 @@ body.dm section.flex .input .input_area .textarea {
   box-sizing: border-box;
   overflow: auto;
   width: 100%;
-  height: 100%;
+  height: 32px;
   min-height: 32px;
   align-items: stretch;
   margin-left: 1rem;
   border: 1px solid #d5d6d8;
   background: #f5f6f8;
-  border-radius: 50px;
+  border-radius: 50vh;
   padding: 5px 50px 5px 16px;
   line-height: 1.5;
   font-size: 13px;
@@ -409,23 +409,26 @@ body.dm section.flex .input .input_area .textarea {
 
 body.dm section.flex .input .input_area .text button {
   position: relative;
+  height: 20px;
   display: block;
   margin-left: -50px;
   color: #FA4878;
+  align-self: center;
 }
 
 body.dm section.flex .input .input_area label {
   cursor: pointer;
   font-size: 1.75rem;
   line-height: 1;
-  height: 29px;
+  height: 28px;
+  margin-top: -2px;
   align-self: flex-start;
   display: block;
-  align-items: center;
+  align-self: center;
 }
 
 body.dm section.flex .input .input_area label i {
-  margin-top: 3px;
+  margin: 0;
   padding: 0;
 }
 
