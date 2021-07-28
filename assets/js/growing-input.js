@@ -1,6 +1,5 @@
 var div = document.querySelector('#ta-frame');
 var inner = document.querySelector('#ta-inner');
-var In = document.querySelector('#ta-in');
 var ta = document.querySelector('textarea');
 
 ta.addEventListener('keydown', autosize);
@@ -11,7 +10,6 @@ function autosize() {
     var height = Math.min(22 * 3, ta.scrollHeight);
     div.style.cssText = 'height:' + height + 'px';
     inner.style.cssText = 'height:' + height + 'px';
-    in.style.cssText = 'height:' + height + 'px';
     ta.style.cssText = 'height:' + height + 'px';
   }, 0);
 }
