@@ -403,7 +403,7 @@ body.dm section.flex .input .input_area .textarea {
   margin-left: 1rem;
   border: 1px solid #d5d6d8;
   background: #f5f6f8;
-  border-radius: 22px;
+  border-radius: 1rem;
   padding: 5px 34px 5px 16px;
   line-height: 1.5;
   font-size: 13px;
