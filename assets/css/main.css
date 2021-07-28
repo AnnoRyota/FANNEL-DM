@@ -368,6 +368,7 @@ body.dm section.flex .input {
   box-sizing: border-box;
   width: 100%;
   height: auto;
+  min-height: 65px;
   border-top: 1px solid #ddd;
   margin: 0;
   background: #fff;
@@ -399,7 +400,7 @@ body.dm section.flex .input .input_area .textarea {
   margin-left: 1rem;
   border: 1px solid #d5d6d8;
   background: #f5f6f8;
-  border-radius: 50vh;
+  border-radius: 22px;
   padding: 5px 50px 5px 16px;
   line-height: 1.5;
   font-size: 13px;
