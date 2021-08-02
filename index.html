@@ -270,24 +270,39 @@
         <div class="chat_text left">
           <div class="icon"><img src="assets/dummy4/1.jpg" alt=""></div>
           <div class="chat_message">
-            <p>メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示</p>
-            <small>2021.6.6 12:42</small>
-          </div>
-          <div class="button" id="button">
-            <div class="btn">
-              <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-              <ul class="sub">
+            <p>メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示
+              メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示
+              メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示
+            </p>
+            <div class="button">
+              <div class="popup" for="menu" onclick="popUp()">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <ul class="sub" id="sub1">
                 <li><a href="#" class="red">通報する</a></li>
               </ul>
             </div>
+            <small>2021.6.6 12:42</small>
           </div>
         </div>
+
         <div class="chat_text right">
           <div class="chat_message">
+            <div class="button">
+              <div class="popup" for="menu" onclick="popUp2()">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <ul class="sub" id="sub2">
+                <li><a href="#" class="red">メッセージを削除</a></li>
+                <hr>
+                <li><a href="#">コピー</a></li>
+              </ul>
+            </div>
             <p>メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示メッセージを表示</p>
             <small>2021.6.6 12:46 既読</small>
           </div>
         </div>
+
         <div class="chat_text left">
           <div class="icon"><img src="assets/dummy4/1.jpg" alt=""></div>
           <div class="chat_message">
@@ -341,6 +356,7 @@
   <script src="assets/js/app.js"></script>
   <script src="assets/js/select.js"></script>
   <script src="assets/js/growing-input.js"></script>
+  <script src="assets/js/popup.js"></script>
   <script>
     var obj = document.getElementById('chat_area');
     obj.scrollTop = obj.scrollHeight;
