@@ -292,32 +292,55 @@ body.dm section.flex .chat .title {
 }
 
 body.dm section.flex .chat .chat_text {
-  max-width: 65%;
+  max-width: 70%;
   padding: 1rem 1rem 0;
   text-rendering: auto;
 }
 
-body.dm section.flex .chat .chat_text.left {
+body.dm section.flex .chat .chat_text .chat_message {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 2rem;
+}
+
+body.dm section.flex .chat .chat_text {
   display: flex;
 }
 
-body.dm section.flex .chat .chat_text .button .fas {
-  align-self: center;
-  color: #777777;
+body.dm section.flex .chat .chat_text .chat_message .button {
+  display: none;
 }
 
-body.dm section.flex .chat .chat_text .button .btn .sub {
+body.dm section.flex .chat .chat_text.left .chat_message:hover .button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  align-self: center;
+  font-size: .875rem;
+  color: #777777;
+  width: .75rem;
+  margin-left: .5rem;
+  transition: all .8s;
+}
+
+body.dm section.flex .chat .chat_text .button .sub {
   display: none;
-  position: absolute;
-  margin-left: -1rem;
-  padding: .5rem 1rem;
+  position: relative;
+  width: max-content;
+  margin-bottom: -1.875rem;
   background-color: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, .3);
   border-radius: 5px;
   line-height: 1;
+  z-index: 999;
 }
 
-body.dm section.flex .chat .chat_text .button .btn a .fas:hover .sub {
+body.dm section.flex .chat .chat_text .button .sub li {
+  box-sizing: border-box;
+  padding: .5rem 1rem;
+}
+
+body.dm section.flex .chat .chat_text .chat_message .button .sub.show {
   display: block;
 }
 
@@ -337,22 +360,9 @@ body.dm section.flex .chat .chat_text .images {
   margin-top: 1rem;
 }
 
-body.dm section.flex .chat .chat_text.right  {
-  color: #fff;
-  align-self: flex-end;
-}
-
-body.dm section.flex .chat .chat_text.right p {
-  background-color: #0b0d0e;
-  margin: 0;
-}
-
-body.dm section.flex .chat .chat_text.right small {
-  margin-left: 8px;
-}
-
 body.dm section.flex .chat .chat_text p {
-  box-sizing: content-box;
+  flex-basis: 91.3333%;
+  box-sizing: border-box;
   margin-left: 1rem;
   background-color: #F5F6F8;
   padding: .5rem 1rem;
@@ -362,7 +372,49 @@ body.dm section.flex .chat .chat_text p {
 
 body.dm section.flex .chat .chat_text small {
   color: #777777;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 5px;
+}
+
+body.dm section.flex .chat .chat_text.right {
+  width: 65%;
+  position: relative;
+  color: #fff;
+  right: 0;
+  align-self: flex-end;
+}
+
+body.dm section.flex .chat .chat_text.right .chat_message {
+  padding: 0;
+  align-self: flex-end;
+}
+
+body.dm section.flex .chat .chat_text.right .chat_message .button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  align-self: center;
+  font-size: .875rem;
+  color: #777777;
+  width: .75rem;
+  margin-left: .5rem;
+  transition: all .8s;
+}
+
+body.dm section.flex .chat .chat_text.right p {
+  flex-basis: 96%;
+  background-color: #0b0d0e;
+  margin: 0;
+  align-self: flex-end;
+}
+
+body.dm section.flex .chat .chat_text.right small {
+  width: 100%;
+  margin-left: 8px;
+}
+
+body.dm section.flex .chat .chat_text.right .button .sub hr {
+  border-top: .5px solid #ddd;
 }
 
 body.dm section.flex .input {
